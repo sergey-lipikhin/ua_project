@@ -1,0 +1,745 @@
+$lightblue: #F6FDFF;
+$lightgreen: #F9FFF9;
+$lightorange: #FFFEF4;
+
+.our_projects {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .projects__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px;
+    width: 94%;
+    height: 736px;
+    margin: 3rem 0 0 0;
+    padding: 0 0 0 5%;
+    overflow: hidden;
+
+    .projects__content {
+      // width: 45%;
+
+      .projects__text {
+        
+        .projects__title{
+          font-size: 3rem;
+          margin-bottom: 1.8rem;
+          font-weight: bold;
+        }
+        
+        .projects__text_p {
+          font-size: 1.7rem;
+          font-weight: 400;
+        }
+      }
+
+      .projects__button{
+        margin-top: 3rem;
+
+        .projects__knopka {
+          width: 331px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50px;
+          color: #000000;
+          cursor: pointer;
+          height: 52px;
+          font-size: 1.5rem;
+        }
+
+        .projects__knopka:disabled{
+          background: #ccc;
+          opacity: .5;
+          transition: .4s;
+          border: #ccc ;
+        }
+
+        .testUkrLang__button{
+          border: 1px solid rgba(122,214,255,1);
+          background-color: #F6FDFF;
+        }
+
+        .testUkrLang__button:active{
+          background-color: #F3FBFF;
+        }
+
+        .wheelFortune__button{
+          border: 1px solid rgba(157,255,122,1);
+          background-color: #F9FFF9;
+        }
+
+        .chainHappiness__button{
+          border: 1px solid rgba(255,210,122,1);
+          background-color: #FFFEF4;
+        }
+      }
+    }
+
+    .testUa_img{
+      background-image: url(../../../../../assets/images/testUkrLang/testFull.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .projects__img_block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      // width: 55%;
+      padding: 2%;
+      overflow: hidden;
+
+      @media screen and (max-width: 500px) {
+        height: auto;
+      }
+
+      .img__block{
+        height: 100%;
+        width: 33.3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+
+        img{
+          position: absolute;
+        }
+
+        p{
+          position: absolute;
+          font-size: 2.5rem;
+        }
+
+        .testUkrLang_p_b0{
+          bottom: 58.5%;
+          right: 39%;
+          rotate: -8deg;
+        }
+
+        .testUkrLang_p_b{
+          top: 47.8%;
+          right: 10%;
+          rotate: 5deg;
+        }
+
+        .testUkrLang_img_v{
+          z-index: 1;
+        }
+  
+        .testUkrLang_img_b{
+          top: 47.5%;
+          right: 7%;
+        }
+  
+        .testUkrLang_img_b0{
+          bottom: 58%;
+          right: 37%;
+        }
+  
+        .testUkrLang_img_b1{
+          top: 38%;
+          width: 16%;
+        }
+  
+        .testUkrLang_img_g{
+          z-index: 10;
+        }
+  
+        .testUkrLang_img_k{
+          bottom: 48%;
+          right: 33%;
+        }
+      }
+    }
+  }
+
+  .ua{
+    background-color: #FFF2EC;
+    -webkit-box-shadow: 4px 5px 6px #FFBE9F;
+    -moz-box-shadow: 4px 5px 6px #FFBE9F;
+    box-shadow: 4px 5px 6px #FFBE9F;
+    border: 1px solid rgba(255, 183, 149, 1);
+
+    @media screen and (max-width: 500px) {
+      flex-direction: column-reverse;
+      justify-content: center;
+  }
+
+    .ua__button {
+      position: relative;
+      z-index: 0;
+      overflow: hidden;
+      border: none !important;
+      padding: 0 !important;
+      background: #FFF2EC !important;
+      color: black;
+      background: white;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 400;
+      // box-shadow: 0 4px 50px 0 rgb(0 0 0 / 7%);
+      transition: .2s all linear;
+      text-decoration: initial;
+    
+      span{
+        position: relative;
+        z-index: 1;
+        height: calc( 100% - 4px );
+        width: calc( 100% - 4px );
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border-radius: 50px;
+        color: black;
+        background: #FFF2EC;
+
+        a{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          align-content: center;
+        }
+      }
+    }
+    
+    .ua__button:after{
+      content: "";
+      position: absolute;
+      z-index: -2;
+      left: -50%;
+      top: -50%;
+      width: 200%;
+      height: 200%;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-size: 50% 50%, 50% 50%;
+      background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+      background-image: linear-gradient(90deg, rgba(255,255,255,0)    0%, #FFBE9F 50%, rgba(255,255,255,0) 100%);
+      -webkit-animation: rotate 2s linear infinite;
+      animation: rotate 2s linear infinite;
+    }
+    
+    
+    @-webkit-keyframes rotate {
+      100% {
+          transform: rotate(360deg);
+      }
+    }
+    
+    @keyframes rotate {
+      100% {
+          transform: rotate(360deg);
+      }
+    }
+  }
+
+  .testUkrLang{
+    -webkit-box-shadow: 4px 5px 6px rgba(122,214,255,1);
+    -moz-box-shadow: 4px 5px 6px rgba(122,214,255,1);
+    box-shadow: 4px 5px 6px rgba(122,214,255,1);
+    border: 1px solid rgba(122,214,255,1);
+    background-color: #F6FDFF;
+
+    .testUkrLang__button {
+      position: relative;
+      z-index: 0;
+      overflow: hidden;
+      border: none !important;
+      padding: 0 !important;
+      background: #F3FBFF !important;
+      color: black;
+      background: white;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 400;
+      // box-shadow: 0 4px 50px 0 rgb(0 0 0 / 7%);
+      transition: .2s all linear;
+      text-decoration: initial;
+    
+      span{
+        position: relative;
+        z-index: 1;
+        height: calc( 100% - 4px );
+        width: calc( 100% - 4px );
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border-radius: 50px;
+        color: black;
+        background: #F3FBFF;
+
+        a{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          align-content: center;
+        }
+      }
+    }
+    
+    .testUkrLang__button:after{
+      content: "";
+      position: absolute;
+      z-index: -2;
+      left: -50%;
+      top: -50%;
+      width: 200%;
+      height: 200%;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-size: 50% 50%, 50% 50%;
+      background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+      background-image: linear-gradient(90deg, rgba(255,255,255,0)    0%, #7AD6FF 50%, rgba(255,255,255,0) 100%);
+      -webkit-animation: rotate 2s linear infinite;
+      animation: rotate 2s linear infinite;
+    }
+    
+    
+    @-webkit-keyframes rotate {
+      100% {
+          transform: rotate(360deg);
+      }
+    }
+    
+    @keyframes rotate {
+      100% {
+          transform: rotate(360deg);
+      }
+    }
+  }
+  
+  
+  .wheelFortune{
+    -webkit-box-shadow: 4px 5px 6px rgba(157,255,122,1);
+    -moz-box-shadow: 4px 5px 6px rgba(157,255,122,1);
+    box-shadow: 4px 5px 6px rgba(157,255,122,1);
+    border: 1px solid rgba(157,255,122,1);
+    background-color: #F9FFF9;
+
+    .wheelFortune__button {
+      position: relative;
+      z-index: 0;
+      overflow: hidden;
+      border: none !important;
+      padding: 0 !important;
+      background: #F3FBFF !important;
+      color: black;
+      background: white;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 400;
+      // box-shadow: 0 4px 50px 0 rgb(0 0 0 / 7%);
+      transition: .2s all linear;
+      text-decoration: initial;
+    
+      span{
+        position: relative;
+        z-index: 1;
+        height: calc( 100% - 4px );
+        width: calc( 100% - 4px );
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border-radius: 50px;
+        color: black;
+        background: #F9FFF9;
+
+        a{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          align-content: center;
+        }
+      }
+    }
+    
+    .wheelFortune__button:after{
+     content: "";
+      position: absolute;
+      z-index: -2;
+      left: -50%;
+      top: -50%;
+      width: 200%;
+      height: 200%;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-size: 50% 50%, 50% 50%;
+      background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+      background-image: linear-gradient(90deg, rgba(255,255,255,0)    0%, rgb(157, 255, 122) 50%, rgba(255,255,255,0) 100%);
+      -webkit-animation: rotate 2s linear infinite;
+      animation: rotate 2s linear infinite;
+    }
+    
+    
+    @-webkit-keyframes rotate {
+      100% {
+          transform: rotate(360deg);
+      }
+    }
+    
+    @keyframes rotate {
+      100% {
+          transform: rotate(360deg);
+      }
+    }
+    
+    .projects__img_block{
+      justify-content: space-around;
+      
+      .left{
+        background-image: url(../../../../../assets/images/wheelFortuna/left.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100px;
+        height: 100%;
+      }
+
+      .right{
+        background-image: url(../../../../../assets/images/wheelFortuna/right.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100px;
+        height: 100%;
+      }
+
+    }
+  }
+  
+  .chainHappiness{
+    -webkit-box-shadow: 4px 5px 6px rgba(255,210,122,1);
+    -moz-box-shadow: 4px 5px 6px rgba(255,210,122,1);
+    box-shadow: 4px 5px 6px rgba(255,210,122,1);
+    border: 1px solid rgba(255,210,122,1);
+    background-color: #FFFEF4;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .our_projects {
+    margin-top: 0;
+
+    .projects__block{
+      height: 663px;
+      margin: 7rem 0 0 0;
+
+      .projects__content{
+
+        .projects__text{
+          line-height: 3rem;
+
+          .projects__title{
+            font-size: 2.2rem;
+          }
+
+          .projects__text_p{
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      .projects__img_block{
+
+        .img__block:first-child{
+          justify-content: flex-end;
+        }
+
+        .img__block{
+          width: 50%;
+          align-items: center;
+          
+          img{
+            position: relative;
+          }
+
+          .testUkrLang_img_b0{
+            display: none;
+          }
+
+          .testUkrLang_p_b0{
+            display: none;
+          }
+
+          .testUkrLang_img_k{
+            bottom: 0;
+            right: 0;
+            width: 30%;
+          }
+
+          .testUkrLang_img_v{
+            display: none;
+          }
+        }
+
+        .img__block:last-child{
+          display: none;
+        }
+      }
+    }
+  }
+
+  .projects__text_card li {
+    font-size: 1.2rem;
+  }
+
+  .projects_text h2 {
+    font-size: 3.8rem;
+  }
+
+  .projects_text p {
+    font-size: 1.2rem;
+  }
+
+  .projects_content {
+    height: 653px;
+  }
+
+  .takeStud_content {
+    margin-top: 10%;
+
+    p {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .testUkrLang{
+
+    .img__block:first-child{
+      width: 30% !important;
+    }
+    .img__block{
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .our_projects{
+
+    .projects__block{
+      height: 585px;
+      margin: 5rem 0 0 0;
+
+      .testUa_img{
+        background-image: url(../../../../../assets/images/testUkrLang/testMedium.svg);
+      }
+
+      .projects__content{
+
+        .projects__button{
+          
+          .projects__knopka{
+            width: 274px;
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+
+  .testUkrLang{
+
+    .img__block:first-child{
+      display: none !important;
+    }
+    .img__block{
+      width: 80% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .our_projects {
+    
+    .projects__block{
+      height: 479px;
+
+      .projects__content{
+
+        .projects__text{
+          line-height: 1.7rem;
+
+          .projects__title{
+            font-size: 1.6rem;
+            margin-bottom: 0.2rem;
+          }
+
+          .projects__text_p{
+            font-size: 1.1rem;
+          }
+        }
+
+        .projects__button{
+
+          .projects__knopka{
+            width: 225px;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    .wheelFortune{
+      
+      .projects__img_block{
+        
+        .left{
+          display: none;
+        }
+  
+        .right{
+          display: none;
+        }
+  
+      }
+    }
+  }
+
+  
+}
+
+@media screen and (max-width: 500px){
+  .our_projects {
+    margin-top: 3rem;
+
+    .projects__block:last-child{
+      height: 790px;
+      flex-direction: column-reverse;
+      margin: 5rem 0 0 0;
+
+      .projects__content{
+        margin-bottom: 3rem;
+      }
+    }
+
+    .projects__block{
+      border-radius: 0;
+      width: 100%;
+      height: 641px;
+      padding-left: 0;
+      flex-direction: column-reverse;
+      margin: 2rem 0 0 0;
+      padding: 1.3rem;
+
+      .testUa_img{
+        background-image: url(../../../../../assets/images/testUkrLang/testSmall.svg);
+        background-size: 50%;
+      }
+
+      .projects__content{
+
+        .projects__text{
+          text-align: center;
+        }
+
+        .projects__button{
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+
+    .testUkrLang, .ua{
+      flex-direction: column-reverse;
+      justify-content: space-evenly;
+
+      .projects__img_block{
+        height: 250px;
+      }
+
+      .img__block{
+        width: 55% !important;
+      }
+    }
+
+    .wheelFortune{
+      justify-content: space-evenly;
+
+      .projects__img_block{
+        height: 63% !important;
+      } 
+    }
+
+    .chainHappiness{
+      justify-content: center;
+
+      .projects__img_block{
+        height: 60% !important;
+      }
+    }
+  }
+
+  .wheelFortune{
+    
+    .projects__img_block{
+      justify-content: center;
+      
+      .left{
+        display: none;
+      }
+
+      .right{
+        display: none;
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .our_projects{
+    margin-top: 0;
+
+    .wheelFortune{
+
+
+      .projects__img_block{
+        height: 51% !important;
+        width: 100%;
+      }
+    }
+  }
+ 
+}
+
+@media screen and (max-width: 320px) {
+  .our_projects{
+
+    .testUkrLang{
+
+      .projects__img_block{
+        background-size: 60%;
+      }
+    }
+
+    .projects__block{
+
+      .projects__content{
+
+        .projects__text{
+
+          .projects__text_p{
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

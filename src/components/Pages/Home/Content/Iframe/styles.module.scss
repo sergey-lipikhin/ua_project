@@ -1,0 +1,10 @@
+.iframe{
+    width: 700px;
+}
+
+@media screen and (max-width: 500px) {
+    .iframe{
+        height: 350px;
+        width: 450px;
+    }
+}

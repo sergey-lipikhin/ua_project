@@ -1,0 +1,61 @@
+$bgr: rgb(244, 244, 244);
+$white: #f4f4f4;
+$blue: #7192e4;
+
+.header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 5%;
+  top: 0;
+  // left: 0;
+  z-index: 3;
+  background-color: #ffff;
+  opacity: 0.9;
+
+  @media screen and (max-width: 1024px) {
+      height: 170px;
+      padding: 0 2rem;
+      z-index: 1;
+  }
+
+  @media screen and (max-width: 820px) {
+      width: 90%;     
+  }
+
+  @media screen and (max-width: 500px) {
+      width: 100%;
+      padding: 0 0.5rem;
+  }
+
+  .header__logo_block{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    // width: 20%;
+  }
+
+  .header__logo {
+    /* align-items: center;
+        justify-content: center;
+        display: flex; */
+    width: 75%;
+    height: 70px;
+  }
+
+  .ua__logo{
+    width: 100%;
+  }
+
+  .gundep{
+    width: 100%;
+  }
+
+  .header__logo img {
+    height: 100%;
+    display: block;
+  }
+}

@@ -1,0 +1,186 @@
+@import './components/Pages/Home/styles.module.scss';
+@import './components/Base/Header/styles.module.scss';
+@import './components/Base/Footer/styles.module.scss';
+@import './components/Pages/Home/Content/styles.module.scss';
+@import './components/Pages/Home/Content/Preview/styles.module.scss';
+@import './components/Pages/Home/Content/OurProject/styles.module.scss';
+@import './components/Pages/Home/Content/Register/styles.module.scss';
+@import './components/Pages/Home/Content/Modals/TestsUkr/styles.modules.scss';
+@import './components/Pages/Home/Content/Modals/LesyaUa/styles.module.scss';
+// @import './components/Pages/Home/Content/Modals/TestsFortune/styles.modules.scss';
+@import './components/Pages/Home/Content/Success/styles.module.scss';
+@import './components/Pages/Home/Content/Oops/styles.module.scss';
+@import './components/Pages/Home/Content/SuccessFortune/styles.module.scss';
+@import './components/Pages/Home/Content/OopsFortune/styles.module.scss';
+@import './components/Pages/Home/Content/Iframe/styles.module.scss';
+@import './components/Pages/Home/Content/Ua/styles.module.scss';
+@import './components/Pages/Home/Content/Taras/styles.module.scss';
+@import './components/Pages/Home/Content/SuccessTaras/styles.module.scss';
+
+@font-face {
+  font-family: Dnipro-Regular;
+  src: url('../fonts/DniproCity-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: DniproCity-Medium;
+  src: url('../fonts/DniproCity-Medium.otf') format('opentype');
+}
+
+$dark: #252525;
+$light: #ffff;
+$gray: #ececec;
+$lightgray: #f4f4f4;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-family: Dnipro-Regular;
+  scroll-behavior: smooth;
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+img {
+  pointer-events: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  max-width: 100%;
+}
+
+a,
+a:visited,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: $light;
+}
+
+body,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p,
+a,
+td,
+li,
+label,
+input,
+button {
+  font-size: 1rem;
+  list-style: none;
+}
+
+#root {
+  margin: 0 auto;
+}
+
+// .button_main{
+//   display: none !important;
+  
+// }
+
+@media screen and (max-width: 1440px) {
+  #root {
+    max-width: 1296px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #root {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 820px) {
+
+}
+
+@media screen and (max-width: 500px) {
+  // #root{
+  //   padding-bottom: 175px;
+  // }
+}
+
+//******************custom scrollBar******************
+::-webkit-scrollbar {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: $light;
+
+  /* ползунок скроллбара */
+  &-thumb {
+    border-radius: 0.2rem;
+  }
+}
+
+/* Стрелки */
+::-webkit-scrollbar-button:vertical:start:decrement {
+  background: linear-gradient(120deg, $light 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(240deg, $light 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(0deg, $light 30%, rgba(0, 0, 0, 0) 31%);
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+  background: linear-gradient(300deg, $light 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(60deg, $light 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(180deg, $light 30%, rgba(0, 0, 0, 0) 31%);
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+  background: linear-gradient(30deg, $light 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(150deg, $light 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(270deg, $light 30%, rgba(0, 0, 0, 0) 31%);
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+  background: linear-gradient(210deg, $light 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(330deg, $light 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(90deg, $light 30%, rgba(0, 0, 0, 0) 31%);
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-button:vertical:end:increment,
+::-webkit-scrollbar-button:vertical:start:decrement,
+::-webkit-scrollbar-button:horizontal:start:decrement,
+::-webkit-scrollbar-button:horizontal:end:increment {
+  background-color: grey;
+
+  &:hover {
+    background-color: $dark;
+  }
+}

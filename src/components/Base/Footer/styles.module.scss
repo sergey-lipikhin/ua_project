@@ -1,0 +1,161 @@
+.footer {
+  display: flex;
+  background-color: #F8FDFF;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  padding: 0 5%;
+  margin-top: auto;
+  left: 0;
+  bottom: 0;
+
+  .footer__block_logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .footer__logo {
+      max-width: 25%;
+      margin-right: 5rem;
+    }
+  }
+
+  .footer__links {
+    display: flex;
+    align-items: center;
+
+    .footer__links_content {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      .footer__link {
+        display: flex;
+        justify-content: space-around;
+        width: 35%;
+
+        a{
+          color: #36AEE5;
+          border-bottom: 1px solid #36AEE5;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .footer{
+    height: 85px;
+
+    .footer__links{
+
+      .footer__links_content{
+
+        .footer__link{
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    height: 105px;
+
+    .footer__block_logo{
+
+      .footer__logo{
+        margin-right: 3rem;
+      }
+    }
+
+    .footer__links{
+
+      .footer__links_content{
+
+        .footer__link{
+          width: 55%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .footer {
+    
+    .footer__block_logo {
+  
+      .footer__logo {
+        margin-right: 1rem;
+      }
+    }
+
+    .footer__links{
+
+      .footer__links_content{
+
+        .footer__link{
+          width: 65%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 190px;
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+
+    .footer__block_logo{
+      justify-content: center;
+      height: 90px;
+
+      .footer__logo{
+        max-width: 45%;
+      }
+    }
+
+    .footer__links{
+
+      .footer__links_content{
+        flex-direction: column;
+
+        .footer__link{
+          width: 85%;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer {
+
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .footer{    
+
+    .footer__links{
+
+      .footer__links_content{
+        flex-direction: column;
+
+        .footer__link{
+          width: 100%;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}

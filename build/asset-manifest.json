@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.81f5b549.css",
+    "main.js": "/static/js/main.0a4169a7.js",
+    "static/media/sheva1.svg": "/static/media/sheva1.8288fb20d83f422ae8dfc085d45810dd.svg",
+    "static/media/lesya.svg": "/static/media/lesya.4f92c58cb6bb5257cc5052b5f2a74c17.svg",
+    "static/media/chainHappiness.png": "/static/media/chainHappiness.db87f18c4cd34dcc5a58.png",
+    "static/media/DniproCity-Medium.otf": "/static/media/DniproCity-Medium.809f6b1d1f9d8d61c466.otf",
+    "static/media/testFull.svg": "/static/media/testFull.8805dd85198bcf41c4d7.svg",
+    "static/media/DniproCity-Regular.otf": "/static/media/DniproCity-Regular.6980d841aa7b28436da8.otf",
+    "static/media/testMedium.svg": "/static/media/testMedium.5e6eaad4f590e94b792e.svg",
+    "static/media/rt.svg": "/static/media/rt.6ec70977a29d9d5e3062404aef4e13ba.svg",
+    "static/media/left.svg": "/static/media/left.6db34ea4945701d71fbd.svg",
+    "static/media/testSmall.svg": "/static/media/testSmall.484b4e522ab5fe6bcfd1.svg",
+    "static/media/right.svg": "/static/media/right.9cb1851bfd0a5c040537.svg",
+    "static/media/ednipro.svg": "/static/media/ednipro.5d16939e8ed862564ee66b0bb6461587.svg",
+    "static/media/logo.svg": "/static/media/logo.8eaaf2f002e288aef4f28b18f8b493f1.svg",
+    "static/media/dnipro.svg": "/static/media/dnipro.d72939fd9bad3d9e07cfc93f55879e15.svg",
+    "static/media/arrow.svg": "/static/media/arrow.1976cb432583e51c63a972f3dcba1093.svg",
+    "index.html": "/index.html",
+    "main.81f5b549.css.map": "/static/css/main.81f5b549.css.map",
+    "main.0a4169a7.js.map": "/static/js/main.0a4169a7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81f5b549.css",
+    "static/js/main.0a4169a7.js"
+  ]
+}

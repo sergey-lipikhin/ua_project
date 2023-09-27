@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Перевірте свої знання з української мови за допомогою онлайн-тесту, який покаже рівень Вашої обізнаності у рідній мові."
+    />
+    <meta name="google-site-verification" content="W-i71vj8DV4bmJEOXP13EPWXebMm_aJTMgbsMlUOKcA" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <title>UA - перевір свої знання</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HQ80WHVR9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7HQ80WHVR9');
+  </script>
+  <body>
+    <div id="root"></div>
+    <div id="portal"></div>
+    <!-- <div id="modal"></div> -->
+
+    <script>
+      let docTitle = document.title;
+      window.addEventListener("blur", () => {
+        document.title = "UA - Повертайся";
+      })
+      window.addEventListener("focus", () => {
+        document.title = docTitle;
+      })
+    </script>
+  </body>
+</html>

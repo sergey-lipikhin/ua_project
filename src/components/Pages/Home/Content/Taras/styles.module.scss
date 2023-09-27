@@ -1,0 +1,106 @@
+.taras{
+    background-color: #F7F2FF;
+    -webkit-box-shadow: 4px 5px 6px #937DB3;
+    -moz-box-shadow: 4px 5px 6px #937DB3;
+    box-shadow: 4px 5px 6px #937DB3;
+
+    @media screen and (max-width: 500px) {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .taras__button {
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+        border: none !important;
+        padding: 0 !important;
+        background: #F7F2FF !important;
+        color: black;
+        background: white;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 400;
+        // box-shadow: 0 4px 50px 0 rgb(0 0 0 / 7%);
+        transition: .2s all linear;
+        text-decoration: initial;
+      
+        span{
+          position: relative;
+          z-index: 1;
+          height: calc( 100% - 4px );
+          width: calc( 100% - 4px );
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          border-radius: 50px;
+          color: black;
+          background: #F7F2FF;
+  
+          a{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+          }
+        }
+      }
+      
+      .taras__button:after{
+        content: "";
+        position: absolute;
+        z-index: -2;
+        left: -50%;
+        top: -50%;
+        width: 200%;
+        height: 200%;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: 50% 50%, 50% 50%;
+        background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+        background-image: linear-gradient(90deg, rgba(255,255,255,0)    0%, #937DB3 50%, rgba(255,255,255,0) 100%);
+        -webkit-animation: rotate 2s linear infinite;
+        animation: rotate 2s linear infinite;
+      }
+      
+      
+      @-webkit-keyframes rotate {
+        100% {
+            transform: rotate(360deg);
+        }
+      }
+      
+      @keyframes rotate {
+        100% {
+            transform: rotate(360deg);
+        }
+      }
+    
+
+    .projects__content{
+
+        .projects__button{
+
+            // .taras__button{
+            //     border: 1px solid #937DB3;
+            //     background-color: rgba(147, 125, 179, 0.1);
+            // }
+            
+    }
+
+    .projects__img_block{
+        object-fit: contain;
+
+        @media screen and (max-width: 500px) {
+            width: 80%;
+            height: 50%;
+            height: auto;
+        }
+    }
+  }
+
+}
+

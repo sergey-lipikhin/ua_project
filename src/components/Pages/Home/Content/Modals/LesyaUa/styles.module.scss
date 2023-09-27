@@ -1,0 +1,44 @@
+.tests__lesya{
+
+    .tests__container{
+
+        .tests__score{
+            .btn{
+                border: 1px solid #FFB795;
+                background-color: #FFB7951A;  
+                border-radius: 50px;
+                height: 4rem;
+                font-size: 1.5rem;
+            }
+        }
+    
+        .tests__content{
+
+            .tests__progress_bar{
+                
+                .quest__progress_number{
+                    border: 2px solid #FFB795;
+
+                }
+            }     
+        }
+        
+        .test__questions{
+    
+            .question__block{
+    
+                .answers__block{
+
+                    .answer{
+                        border: 1px solid #FFB795;
+                        background-color: #FFB7951A; 
+
+                        a{
+                            font-size: calc(10px + 6 * ((100vw - 320px) / 680)); 
+                        }
+                    }
+                }
+            }
+        } 
+    }   
+  }

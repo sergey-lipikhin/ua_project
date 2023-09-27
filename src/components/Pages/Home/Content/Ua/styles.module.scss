@@ -1,0 +1,41 @@
+.ua{
+    background-color: #FFF2EC;
+    -webkit-box-shadow: 4px 5px 6px #FFBE9F;
+    -moz-box-shadow: 4px 5px 6px #FFBE9F;
+    box-shadow: 4px 5px 6px #FFBE9F;
+
+    @media screen and (max-width: 500px) {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .projects__content{
+
+        .projects__button{
+
+            .ua__button{
+                border: 1px solid rgba(255, 183, 149, 1);
+                background-color: #FFB7951A;
+            }
+        }
+    }
+
+    .projects__img_block{
+        object-fit: contain;
+
+        @media screen and (max-width: 500px) {
+            width: 80%;
+            height: 50%;
+            height: auto;
+        }
+
+        .img__block_lesya{
+
+        }
+        // background-image: url(../../../../../assets/images/lesya/lesya.svg);
+        // background-size: contain;
+        // background-repeat: no-repeat;
+        // background-position: center;
+    }
+}
+

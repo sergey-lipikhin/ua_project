@@ -1,0 +1,71 @@
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  pointer-events: none;
+
+  .rt {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .arrow {
+    position: absolute;
+    left: calc(50% - 25px);
+    top: calc(50% - 77px);
+    width: 50px;
+    padding-bottom: 18.7px;
+  }
+
+  .presents {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    overflow: hidden;
+
+    .content {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        position: absolute;
+        padding-right: 160px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container{
+
+    .presents{
+
+      .content{
+
+        span{
+          padding-right: 140px;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 330px) {
+  .container{
+
+    .presents{
+      top: -1rem;
+    }
+  }
+}
